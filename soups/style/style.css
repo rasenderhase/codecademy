@@ -11,12 +11,12 @@
     display: inline-block;
 }
 
-#ben.staff {
+.ben.staff {
     background-position: 40% 30%;
 }
-#rea.staff {
+.rea.staff {
     background-position: 85% 45%;
 }
-#tom.staff {
+.tom.staff {
     background-position: 68% 40%;
 }
