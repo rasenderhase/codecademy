@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.staff {
+    background-image: url("../img/staff.JPG");
+    background-size: 600%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#ben.staff {
+    background-position: 40% 30%;
+}
+#rea.staff {
+    background-position: 85% 45%;
+}
+#tom.staff {
+    background-position: 68% 40%;
+}
