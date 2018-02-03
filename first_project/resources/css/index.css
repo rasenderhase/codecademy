@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Reenie+Beanie');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    color: SeaGreen;
+}
+
+
+p,
+li {
+    font-size: 18px;
+}
+
+li {
+    font-family: 'Reenie Beanie', cursive;
+}
+
+
+a {
+    text-decoration: none;
+}
