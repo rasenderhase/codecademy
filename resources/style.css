@@ -15,7 +15,8 @@ body {
     background-image: url("favicon.png");
     background-position: left;
     background-repeat: no-repeat;
-    padding: 2px 2px 2px 20px;
+    background-size: 1em;
+    padding: 2px 2px 2px 1.1em;
     color: white;
     font-family: 'Helvetica', sans-serif;
     font-weight: bold;
@@ -64,6 +65,6 @@ body {
     margin: 0 auto;
 
     position: relative;
-    top: 0px;
+    top: 0;
     padding-top: 30px;  /* distance from top must be greater than .navigation height */
 }
