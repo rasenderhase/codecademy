@@ -5,10 +5,11 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
 }
 
+/* company logo *******************************************************************************************************/
 .company {
     background-color: rgb(0, 0, 83);
     background-image: url("favicon.png");
@@ -26,9 +27,13 @@ body {
     color: rgb(205, 186, 81);
 }
 
+/* navigation bar *****************************************************************************************************/
 .navigation {
     background-color: indianred;
     font-weight: bold;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 .navigation a {
@@ -47,12 +52,18 @@ body {
 }
 
 .navigation ul {
+    max-width: 1012px;
+    margin: 0 auto;
+
     padding-left: 0;
-    margin: 0;
 }
 
-.page, .navigation ul {
+/* page content *******************************************************************************************************/
+.page {
     max-width: 1012px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
+
+    position: relative;
+    top: 0px;
+    padding-top: 30px;  /* distance from top must be greater than .navigation height */
 }
