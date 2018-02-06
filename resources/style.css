@@ -38,10 +38,7 @@ p ,li {
 .navigation {
     background-color: indianred;
     font-weight: bold;
-    position: fixed;
     width: 100%;
-    z-index: 10;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
 }
 
 .navigation a {
@@ -66,12 +63,24 @@ p ,li {
     padding-left: 0;
 }
 
+@media (min-width: 600px) {
+    .navigation {
+        position: fixed;
+        z-index: 10;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    }
+}
+
 /* page content *******************************************************************************************************/
 .page {
     max-width: 1012px;
     margin: 0 auto;
+}
 
-    position: relative;
-    top: 0;
-    padding-top: 30px;  /* distance from top must be greater than .navigation height */
+@media (min-width: 600px) {
+    .page {
+        position: relative;
+        top: 0;
+        padding-top: 43px; /* distance from top must be greater than .navigation height */
+    }
 }
