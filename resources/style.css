@@ -33,7 +33,7 @@ p ,li, label {
     letter-spacing: 0.05em;
 }
 
-.company-dot {
+.company span {
     color: rgb(240,222,107);
 }
 
