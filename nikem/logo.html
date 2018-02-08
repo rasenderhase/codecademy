@@ -4,17 +4,39 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="resources/company.css">
+  <link rel="stylesheet" href="resources/style.css">
   <link rel="shortcut icon" href="resources/favicon.svg" type="image/x-icon" />
   <title>nikem.</title>
+</head>
+<body>
+  <h1>Logo test site</h1>
+
+    <details>
+      <summary>Usage</summary>
+      <div class="usage">
+      <svg version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 16 16"
+        preserveAspectRatio="xMinYMin">
+        <path class="pfeil" d="M 15 2 Q 2 2 2 15" stroke="rgba(107, 142, 35, 0.6)" stroke-width="0.2" fill="none"></path>
+        <polyline class="pfeil" points="1 14 2 15 3 14" stroke="rgba(107, 142, 35, 0.6)" stroke-width="0.2" fill="none">
+        </polyline>
+      </svg>
+      <p>
+        use the slider to change nikem's size.
+      </p>
+      </div>
+    </details>
+
+  <input id="range" type="range" min="0.1" max="5" value="1" step="0.1" oninput="changeRange.call(this);"
+         title="Logo size"/>
+  <div class="company">nikem</div>
   <script>
       function changeRange() {
-          document.getElementsByClassName("company")[0].setAttribute("style", "font-size:" + this.value + "px;");
+          document.getElementsByClassName("company")[0].setAttribute("style", "font-size:" + this.value + "em;");
       }
       changeRange.call(document.getElementById("range"));
   </script>
-</head>
-<body>
-  <input id="range" type="range" min="1" max="200" value="24" oninput="changeRange.call(this);" />
-  <div class="company">nikem<span>.</span></div>
 </body>
 </html>

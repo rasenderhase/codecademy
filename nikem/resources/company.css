@@ -15,7 +15,8 @@
     letter-spacing: 0.05em;
 }
 
-.company span {
+.company:after {
+    content: ".";
     color: rgb(240,222,107);
 }
 
