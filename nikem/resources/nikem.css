@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+:root {
+    --nikem-foreground: rgb(0, 0, 102);
+    --nikem-background: rgb(240,222,107);
+}
+
+.nikem {
+    background-color: var(--nikem-foreground);
+    background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" preserveAspectRatio="xMinYMin" space="preserve"> <rect id="nikem-logo-rect" x="0.5" y="0.5" width="15" height="15" style="fill:rgb(240,222,107);stroke:rgb(0, 0, 102);stroke-width:1;" /> <polyline id="nikem-logo-polyline" points="1.5,11.5 7.5,11.5 7.5,8.5 4.5,8.5 4.5,4.5 9.5,4.5 9.5,1 9.5,4.5 11.5,4.5 11.5,14.5" style="fill:none;stroke:rgb(0, 0, 102);stroke-width:1;stroke-linecap:square;" /> </svg> ');
+    background-position-x: 0.2em;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 1.1em;
+    padding: 0.2em 0.2em 0.2em 1.4em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+
+.nikem:after {
+    content: ".";
+    color: var(--nikem-background);
+}
+
+.nikem:hover {
+    color: rgb(0, 0, 102);
+    background-color: #FFFFFF00;
+}
