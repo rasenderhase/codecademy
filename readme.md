@@ -6,3 +6,4 @@
 * [Two Sandals Soups and Salads](./soups)
 * [First Project](./first_project)
 * [Beach Paradise](./BeachParadise)
+* [Fresh Deals](./fresh-deals)
