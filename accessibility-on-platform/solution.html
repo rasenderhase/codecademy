@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Codecademy | Accessibility Project</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Site Header -->
+    <header role="banner" aria-label="site navigation" class="site-header">
+      <!-- Site Navigation -->
+      <nav role="navigation" class="site-navigation">
+        <ul class="site-header-left">
+          <li>
+            <img src="https://s3.amazonaws.com/codecademy-content/programs/ui-design/learn-accessibility/learn-accessibility-logo.svg" alt="Gigantic" />
+          </li>
+        </ul>
+        <ul class="site-header-right">
+          <li>
+            <a href="#" aria-hidden="true">Menu</a>
+          </li>
+          <li>
+            <a href="#" class="active">Home</a>
+          </li>
+          <li>
+            <a href="#">Features</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Site Main Content -->
+    <main role="main">
+      <!-- Main Content Header -->
+      <section role="region" aria-labelledby="page-hero-title" class="main-content-header">
+        <div class="container main-content-container">
+          <h1 id="page-hero-title">Simplify your workflow.</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nunc id ligula sollicitudin finibus eget id leo. Duis lectus orci, dapibus non mattis in, convallis ut sem. Vestibulum ultricies felis tellus, et ultricies justo ultricies a.</p>
+          <a href="#" class="button button-primary">Sign Up Today</a>
+        </div>
+      </section>
+      <!-- Main Content Section 1 -->
+      <section role="region" class="main-content-section">
+        <div class="container">
+          <!-- Main Content Section Header 1 -->
+          <header aria-labelledby="application-description" class="main-content-section-header">
+            <h3 id="application-description">Features built for success.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sollicitudin finibus eget id leo.</p>
+          </header>
+          <ul class="clearfix">
+            <li class="item item-center">
+              <img src="images/icon-1.svg" alt="calendar" class="item-icon" />
+              <p><b>Manage your day-to-day tasks</b></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nunc id ligula sollicitudin finibus eget id leo.</p>
+            </li>
+            <li class="item item-center">
+              <img src="images/icon-2.svg" alt="coffee mug" class="item-icon" />
+              <p><b>Collaborate at any time of day</b></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nunc id ligula sollicitudin finibus eget id leo.</p>
+            </li>
+            <li class="item item-center">
+              <img src="images/icon-3.svg" alt="simely face" class="item-icon" />
+              <p><b>Discover new ways succeed</b></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nunc id ligula sollicitudin finibus eget id leo.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <hr class="divider" />
+      <!-- Main Content Section 2  -->
+      <section role="region" class="main-content-section">
+        <div class="container">
+          <!-- Main Content Section Header 2 -->
+          <header aria-labelledby="application-features" class="main-content-section-header">
+            <h3 id="application-features">Take a look under the hood.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sollicitudin finibus eget id leo.</p>
+          </header>
+          <div class="content-section-2-right mobile-show" aria-hidden="true">
+            <div class="img-container">
+              <img src="images/img-2.jpg" alt="application interface" />
+            </div>
+          </div>
+          <div class="clearfix content-section-2" id="interface-slider">
+            <div class="content-section-2-left">
+              <ul aria-label="interface-slide-groups" aria-controls="interface-slider">
+                <li aria-label="interface-slide-trigger">
+                  <p><b>Track your progress and goals</b></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nunc id ligula sollicitudin finibus eget id leo.</p>
+                </li>
+                <li class="active" aria-label="interface-slide-trigger">
+                  <p><b>Manage your customer support</b></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nunc id ligula sollicitudin finibus eget id leo. Duis lectus orci, dapibus non.</p>
+                </li>
+                <li aria-label="interface-slide-trigger">
+                  <p><b>Create better estimates and proposals</b></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nunc id ligula sollicitudin finibus eget id leo. Duis lectus orci, dapibus non mattis.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="content-section-2-right mobile-hide" aria-hidden="false">
+              <div class="img-container" aria-hidden="false">
+                <img src="images/img-2.jpg" alt="application interface" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="divider" />
+      <!-- Main Content Section 3  -->
+      <section role="region" class="main-content-section">
+        <div class="container">
+          <!-- Main Content Section Header 3 -->
+          <header aria-labelledby="customer-testimonies" class="main-content-section-header">
+            <h3 id="customer-testimonies">What our customers have to say.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sollicitudin finibus eget id leo.</p>
+          </header>
+          <div id="customer-slider" class="slider">
+            <ul class="clearfix">
+              <li class="item item-quote">
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nunc id ligula sollicitudin finibus eget id leo. Duis lectus orci, dapibus non mattis in, convallis ut sem ultricies.”</p>
+                <div class="chip">
+                  <div class="chip">
+                    <div class="chip-img-container">
+                      <img src="images/avatar-1.jpg" />
+                    </div>
+                    <div class="chip-content-container">
+                      <p class="chip-content-title">Mitchell Andrews</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="item item-quote item-quote-active">
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nunc id ligula sollicitudin finibus eget id leo. Duis lectus orci, dapibus non mattis in, convallis ut sem ultricies.”</p>
+                <div class="chip">
+                  <div class="chip">
+                    <div class="chip-img-container">
+                      <img src="images/avatar-2.jpg" />
+                    </div>
+                    <div class="chip-content-container">
+                      <p class="chip-content-title">Hulda Wilson</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="item item-quote">
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nunc id ligula sollicitudin finibus eget id leo. Duis lectus orci, dapibus non mattis in, convallis ut sem ultricies.”</p>
+                <div class="chip">
+                  <div class="chip">
+                    <div class="chip-img-container">
+                      <img src="images/avatar-3.jpg" />
+                    </div>
+                    <div class="chip-content-container">
+                      <p class="chip-content-title">Inez Banks</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="dots" aria-label="slide-groups" aria-controls="customer-slider">
+              <button class="dot" aria-label="slide-group-trigger"></button>
+              <button class="dot active" aria-label="slide-group-trigger"></button>
+              <button class="dot" aria-label="slide-group-trigger"></button>
+            </div>
+            <div class="slider-arrows" aria-label="buttons" aria-controls="customer-slider">
+              <button class="slider-arrow slider-arrow-left" value="previous" aria-label="previous">
+                <img src="images/icon-4.svg" />
+              </button>
+              <button class="slider-arrow slider-arrow-right" value="next" aria-label="next">
+                <img src="images/icon-4.svg" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Main Content Section 4  -->
+      <section role="region" class="main-content-section content-section-4">
+        <div class="container center">
+          <h3>Request a demo.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nunc id ligula sollicitudin finibus eget id leo.</p>
+          <a href="#" role="button" class="button button-primary">Sign Up Today</a>
+        </div>
+      </section>
+    </main>
+    <!-- Site Footer -->
+    <footer role="contentinfo" class="footer clearfix">
+      <!-- Site Footer Nav -->
+      <nav role="navigation" class="footer-navigation">
+        <ul class="footer-left">
+          <li>
+            <img src="https://s3.amazonaws.com/codecademy-content/programs/ui-design/learn-accessibility/learn-accessibility-logo.svg" alt="Gigantic" />
+          </li>
+        </ul>
+        <ul class="footer-right">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Features</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
