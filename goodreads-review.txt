@@ -1,0 +1,41 @@
+Learnability
+============
+- new users: how fast are new users learning the product?
+
+Why should I rate books, I've never read? How to find books I have read?
+Can I set up German language?
+
+On the first view it's not very clear where to rate the book. Rating is the most
+important thing I think to be able to use the website.
+
+Too many things are challenging to acquire my interest: Reading Challenge,
+Choice Awards, Want to Read, Blog, News feed.
+
+Head line helps understand the purpose of the site: "Meet your favorite book,
+find your reading community, and manage your reading life."
+
+Menu and icons is similar to other social apps (bell symbol, chat symbol,
+letter, friends)
+
+Efficiency
+==========
+- how fast can recurring users perform particular tasks?
+
+Memorability
+============
+- after some time can users easily remember how to use the product?
+
+Errors
+======
+- goals: minimize errors / quick recovery from errors
+
+Registration: after registration I nearly invited all my Google contacts to
+goodreads. fortunately I could recover from the error pressing "skip this page".
+
+Satisfaction
+============
+- is it pleasant or fun to use the product?
+
+It is very hard to enter 20 books to receive recommendations.
+I have entered a book. Goodreads shows in the UPDATES feed blog posts
+from the author that are 4 years old.
