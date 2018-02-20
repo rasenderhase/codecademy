@@ -9,7 +9,7 @@
 </head>
 <body>
 <nav class="navigation">
-  <input type="checkbox" id="toggle"><label for="toggle">&#9776;</label>
+  <input type="checkbox" id="toggle" aria-hidden="true"><label for="toggle">&#9776;</label>
   <ul>
     <li><a href="#projects-website-uis">Build Website UIs</a></li>
     <li><a href="./nikem/logo.html" target="_blank">Logo Test Page</a></li>
@@ -17,16 +17,24 @@
   </ul>
 </nav>
 <div class="page">
-  <header>
-    <h1>My Codecademy Projects</h1>
+  <header role="banner" aria-labelledby="projects-header">
+    <h1 id="projects-header">My Codecademy Projects</h1>
   </header>
-  <nav id="projects-website-uis">
-    <h2>Build Website UIs</h2>
+  <nav role="navigation" aria-labelledby="projects-website-uis">
+    <h2 id="projects-website-uis">Build Website UIs</h2>
     <ul>
       <li><a href="./first_project/index.html">First Project</a></li>
       <li><a href="./soups/home.html">Two Sandals Soups and Salads</a></li>
       <li><a href="./BeachParadise/index.html">Beach Paradise</a></li>
       <li><a href="./fresh-deals/index.html">Fresh Deals</a></li>
+      <li>
+        Acessability
+        <ul>
+          <li><a href="./accessibility-on-platform/index.html">Bad</a></li>
+          <li><a href="./accessibility-on-platform/solution.html">Good</a></li>
+        </ul>
+      </li>
+      <li><a href="accessibility-cumulative-project/index.html">Acessability - Explorer Blog</a></li>
     </ul>
   </nav>
 </div>

@@ -7,6 +7,5 @@
 * [First Project](./first_project)
 * [Beach Paradise](./BeachParadise)
 * [Fresh Deals](./fresh-deals)
-* Accessability on Platform
-  * [Bad](accessibility-on-platform/index.html)
-  * [Good](accessibility-on-platform/solution.html)
+* [Accessability on Platform](./accessibility-on-platform)
+* [Accessability Cumulative Project](./accessibility-cumulative-project)

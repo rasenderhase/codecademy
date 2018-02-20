@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="14px" viewBox="0 0 7 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Blog" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="blog_Large_1A_C" transform="translate(-317.000000, -3206.000000)" fill="#FFFFFF">
+            <g id="Main" transform="translate(200.000000, 295.000000)">
+                <g id="article">
+                    <g id="footer" transform="translate(109.000000, 2907.000000)">
+                        <g id="list">
+                            <g id="icon">
+                                <path d="M9.7512398,17.8929252 L12.2524987,17.8929252 L12.2524987,11.0226279 L14.1289006,11.0226279 L14.5,8.87590819 L12.2524987,8.87590819 L12.2524987,7.32032305 C12.2524987,6.81885153 12.5767529,6.29232934 13.0401694,6.29232934 L14.3175021,6.29232934 L14.3175021,4.14560963 L12.752079,4.14560963 L12.752079,4.15523276 C10.3027008,4.24413206 9.7994583,5.66270229 9.7558175,7.15275855 L9.7512398,7.15275855 L9.7512398,8.87590819 L8.5,8.87590819 L8.5,11.0226279 L9.7512398,11.0226279 L9.7512398,17.8929252 Z"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
