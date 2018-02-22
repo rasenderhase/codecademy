@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width">
+  <title>Gradients</title>
+  <link rel="stylesheet" href="resources/style.css">
+</head>
+<body>
+<div id="area1"></div>
+<div id="area2"></div>
+</body>
+<script>
+    (function () {
+      function createMovable(id) {
+          var x, y, leftKeyDown = false,
+              dm = document.getElementById(id);
+          dm.addEventListener('mousedown', mousedown, false);
+          dm.addEventListener('mousemove', mousemove, false);
+          document.body.addEventListener('mouseup', mouseup, false);
+
+          function mousedown(event) {
+              var rect = dm.getBoundingClientRect();
+              leftKeyDown = event.which === 1;
+              if (leftKeyDown) {
+                  //save initial coordinate offset
+                  x = event.screenX - rect.left;
+                  y = event.screenY - rect.top;
+              }
+              event.preventDefault();
+              return false;
+          }
+
+          function mousemove(event) {
+              var rect = dm.getBoundingClientRect();
+              if (leftKeyDown) {
+                  //left key pressed
+                  dm.style.left = (event.screenX - x) + 'px';
+                  dm.style.top = (event.screenY - y) + 'px';
+              }
+              event.preventDefault();
+              return false;
+          }
+
+          function mouseup(event) {
+              if (event.which === 1) {
+                  leftKeyDown = false;
+              }
+              event.preventDefault();
+              return false;
+          }
+      }
+
+      //createMovable("area1");
+      createMovable("area2");
+  })()
+</script>
+</html>

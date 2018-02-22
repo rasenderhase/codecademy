@@ -1,0 +1,18 @@
+#area1 {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(0deg, hsl(0, 100%, 50%), hsl(120, 100%, 50%), hsl(240, 100%, 50%));
+}
+
+#area2 {
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(0deg, hsla(60, 100%, 50%, 0.5), hsla(180, 100%, 50%, 0.5), hsla(300, 100%, 50%, 0.5));
+    cursor: move;
+}
