@@ -4,4 +4,4 @@
 
 ### Project - Color Theory
 
-[Preview](http://htmlpreview.github.io/?https://github.com/rasenderhase/codecademy/blob/master/color/index.html)
+[Preview](http://htmlpreview.github.io/?https://github.com/rasenderhase/codecademy/blob/master/colors/index.html)
