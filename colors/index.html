@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="resources/style.css">
+  <title>Colors</title>
+</head>
+<body>
+  <section>
+    <label for="range">Hue: </label><input id="range" type="range" min="0" max="360" value="210" oninput="changeRange.call(this);">
+    <span id="value"></span>
+  </section>
+  <div id="color1"></div>
+  <div id="color2"></div>
+
+  <div id="color3"></div>
+  <div id="color4"></div>
+
+  <div id="color5"></div>
+  <div id="color6"></div>
+</body>
+<script>
+    function changeRange() {
+        document.documentElement.style.setProperty("--main-hue", this.value);
+        document.getElementById("value").textContent = this.value;
+    }
+    changeRange.call(document.getElementById("range"));
+</script>
+</html>

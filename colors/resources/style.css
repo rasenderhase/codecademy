@@ -1,0 +1,51 @@
+:root {
+    --main-hue: 180;
+}
+
+#color1, #color3, #color5 {
+    --hue : var(--main-hue);
+}
+
+#color2, #color4, #color6 {
+    --hue : calc(var(--main-hue) - 180);
+}
+
+#color1 {
+    --color : hsl(var(--hue), 50%, 50%);
+}
+#color2 {
+    --color: hsl(var(--hue), 90%, 80%);
+}
+#color3 {
+    --color: hsl(var(--hue), 50%, 70%);
+}
+#color4 {
+    --color: hsl(var(--hue), 90%, 10%);
+}
+#color5 {
+    --color: hsl(var(--hue), 50%, 90%);
+}
+#color6 {
+    --color: hsl(var(--hue), 90%, 60%);
+}
+
+div {
+    width: 15em;
+    height: 15em;
+    display: inline-block;
+    float: left;
+    margin: 1em;
+    background-color: var(--color);
+}
+
+#color1 {
+clear: left;
+}
+
+#color3 {
+    clear: left;
+}
+
+#color5 {
+    clear: left;
+}
