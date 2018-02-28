@@ -65,3 +65,22 @@ clear: left;
 #color5 {
     clear: left;
 }
+
+span[data-tooltip] {
+    position: relative;
+    cursor: pointer;
+}
+
+span[data-tooltip]:hover:after {
+    content: attr(data-tooltip);
+    position: absolute;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 3px 7px;
+    color: #FFF;
+    border-radius: 3px;
+    margin-left: 7px;
+    margin-top: -3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
