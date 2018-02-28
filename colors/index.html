@@ -7,7 +7,10 @@
   <title>Colors</title>
 </head>
 <body>
-  <section>
+  <header role="banner">
+    <h1>Complementary Color Scheme</h1>
+  </header>
+  <section role="region" aria-label="Hue and saturation configuration">
     <label for="hue">Hue: </label><input id="hue" type="range" min="0" max="360" value="210" oninput="changeRange.call(this, '');">
     <span id="value-hue"></span><br />
     <label for="sat1">Saturation 1: </label><input id="sat1" type="range" min="0" max="100" value="50" oninput="changeRange.call(this, '%');">
