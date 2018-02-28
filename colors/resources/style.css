@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch');
+
 :root {
     --main-hue: 180;
     --main-sat1:  50%;
@@ -25,6 +27,7 @@
 }
 #color4 {
     --color: hsl(var(--hue), var(--sat), 10%);
+    color: white;
 }
 #color5 {
     --color: hsl(var(--hue), var(--sat), 90%);
@@ -39,12 +42,17 @@ label {
 }
 
 div {
-    width: 15em;
-    height: 15em;
+    width: 3em;
+    height: 3em;
     display: inline-block;
     float: left;
-    margin: 1em;
+    margin: 0.3em;
     background-color: var(--color);
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 5em;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0.9em 0;
 }
 
 #color1 {
