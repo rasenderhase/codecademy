@@ -4,28 +4,37 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="resources/style.css">
-  <title>Colors</title>
+  <link rel="stylesheet" href="../resources/style.css">
+  <title>Complementary Color Scheme</title>
 </head>
 <body>
   <header role="banner">
-    <h1>Complementary Color Scheme</h1>
+    <nav class="navigation">
+      <input type="checkbox" id="toggle" aria-hidden="true"><label for="toggle">&#9776;</label>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+    </nav>
   </header>
-  <section role="region" aria-label="Hue and saturation configuration">
-    <label for="hue">Hue: </label><input id="hue" type="range" min="0" max="360" value="210" oninput="changeRange.call(this, '');">
-    <span id="value-hue"></span><br />
-    <label for="sat1">Saturation 1: </label><input id="sat1" type="range" min="0" max="100" value="50" oninput="changeRange.call(this, '%');">
-    <span id="value-sat1"></span><br />
-    <label for="sat2">Saturation 2: </label><input id="sat2" type="range" min="0" max="100" value="90" oninput="changeRange.call(this, '%');">
-    <span id="value-sat2"></span>
-  </section>
-  <div id="color1">50%</div>
-  <div id="color2">80%</div>
+  <main class="page" role="main" aria-labelledby="page-header">
+    <h1 id="page-header">Complementary Color Palette</h1>
+    <section role="region" aria-label="Hue and saturation configuration">
+      <label for="hue">Hue: </label><input id="hue" type="range" min="0" max="360" value="210" oninput="changeRange.call(this, '');">
+      <span id="value-hue"></span><br />
+      <label for="sat1">Saturation 1: </label><input id="sat1" type="range" min="0" max="100" value="50" oninput="changeRange.call(this, '%');">
+      <span id="value-sat1"></span><br />
+      <label for="sat2">Saturation 2: </label><input id="sat2" type="range" min="0" max="100" value="90" oninput="changeRange.call(this, '%');">
+      <span id="value-sat2"></span>
+    </section>
+    <div id="color1">50%</div>
+    <div id="color2">80%</div>
 
-  <div id="color3">70%</div>
-  <div id="color4">10%</div>
+    <div id="color3">70%</div>
+    <div id="color4">10%</div>
 
-  <div id="color5">90%</div>
-  <div id="color6">60%</div>
+    <div id="color5">90%</div>
+    <div id="color6">60%</div>
+  </main>
 </body>
 <script>
         function changeRange(unit) {
