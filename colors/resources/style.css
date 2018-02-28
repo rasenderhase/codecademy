@@ -1,32 +1,41 @@
 :root {
     --main-hue: 180;
+    --main-sat1:  50%;
+    --main-sat2:  90%;
 }
 
 #color1, #color3, #color5 {
     --hue : var(--main-hue);
+    --sat : var(--main-sat1);
 }
 
 #color2, #color4, #color6 {
     --hue : calc(var(--main-hue) - 180);
+    --sat : var(--main-sat2);
 }
 
 #color1 {
-    --color : hsl(var(--hue), 50%, 50%);
+    --color : hsl(var(--hue), var(--sat), 50%);
 }
 #color2 {
-    --color: hsl(var(--hue), 90%, 80%);
+    --color: hsl(var(--hue), var(--sat), 80%);
 }
 #color3 {
-    --color: hsl(var(--hue), 50%, 70%);
+    --color: hsl(var(--hue), var(--sat), 70%);
 }
 #color4 {
-    --color: hsl(var(--hue), 90%, 10%);
+    --color: hsl(var(--hue), var(--sat), 10%);
 }
 #color5 {
-    --color: hsl(var(--hue), 50%, 90%);
+    --color: hsl(var(--hue), var(--sat), 90%);
 }
 #color6 {
-    --color: hsl(var(--hue), 90%, 60%);
+    --color: hsl(var(--hue), var(--sat), 60%);
+}
+
+label {
+    display: inline-block;
+    width: 8em;
 }
 
 div {

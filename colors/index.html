@@ -8,8 +8,12 @@
 </head>
 <body>
   <section>
-    <label for="range">Hue: </label><input id="range" type="range" min="0" max="360" value="210" oninput="changeRange.call(this);">
-    <span id="value"></span>
+    <label for="hue">Hue: </label><input id="hue" type="range" min="0" max="360" value="210" oninput="changeRange.call(this, '');">
+    <span id="value-hue"></span><br />
+    <label for="sat1">Saturation 1: </label><input id="sat1" type="range" min="0" max="100" value="50" oninput="changeRange.call(this, '%');">
+    <span id="value-sat1"></span><br />
+    <label for="sat2">Saturation 2: </label><input id="sat2" type="range" min="0" max="100" value="90" oninput="changeRange.call(this, '%');">
+    <span id="value-sat2"></span>
   </section>
   <div id="color1"></div>
   <div id="color2"></div>
@@ -21,10 +25,19 @@
   <div id="color6"></div>
 </body>
 <script>
-    function changeRange() {
-        document.documentElement.style.setProperty("--main-hue", this.value);
-        document.getElementById("value").textContent = this.value;
-    }
-    changeRange.call(document.getElementById("range"));
+        function changeRange(unit) {
+            var id = this.id;
+            if (id) {
+                document.documentElement.style.setProperty("--main-" + id, this.value + unit);
+                document.getElementById("value-" + id).textContent = this.value + unit;
+            }
+        }
+
+        (function () {
+            var inputs = document.getElementsByTagName("input");
+            for (var i = 0; i < inputs.length; i++) {
+                inputs[i].oninput.call(inputs[i]);
+            }
+        })();
 </script>
 </html>
