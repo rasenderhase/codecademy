@@ -19,11 +19,11 @@
   <main class="page" role="main" aria-labelledby="page-header">
     <h1 id="page-header">Complementary Color Palette</h1>
     <section role="region" aria-label="Hue and saturation configuration">
-      <label for="hue">Hue: </label><input id="hue" type="range" min="0" max="360" value="210" oninput="changeRange.call(this, '');">
+      <label for="hue">Hue: </label><input id="hue" class="range" type="range" min="0" max="360" value="210" oninput="changeRange.call(this, '');">
       <span id="value-hue"></span><br />
-      <label for="sat1">Saturation 1: </label><input id="sat1" type="range" min="0" max="100" value="50" oninput="changeRange.call(this, '%');">
+      <label for="sat1">Saturation 1: </label><input id="sat1" class="range" type="range" min="0" max="100" value="50" oninput="changeRange.call(this, '%');">
       <span id="value-sat1"></span><br />
-      <label for="sat2">Saturation 2: </label><input id="sat2" type="range" min="0" max="100" value="90" oninput="changeRange.call(this, '%');">
+      <label for="sat2">Saturation 2: </label><input id="sat2" class="range" type="range" min="0" max="100" value="90" oninput="changeRange.call(this, '%');">
       <span id="value-sat2"></span>
     </section>
     <div id="color1">50%</div>
@@ -46,7 +46,7 @@
         }
 
         (function () {
-            var inputs = document.getElementsByTagName("input");
+            var inputs = document.getElementsByClassName("range");
             for (var i = 0; i < inputs.length; i++) {
                 inputs[i].oninput.call(inputs[i]);
             }
