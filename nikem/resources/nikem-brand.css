@@ -1,0 +1,56 @@
+@import "nikem.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: hsl(0, 0%, 20%);
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+.site-header-nav {
+    color: hsl(60, 82%, 62%);
+    background-color: hsl(240, 100%, 20%);
+    padding: 0.2em 0;
+}
+
+.color {
+    margin-top: 3px;
+    margin-right: 3px;
+
+    width: 170px;
+    height: 170px;
+    text-align: center;
+    padding-top: 45px;
+    display: inline-block;
+}
+
+.primary {
+    background-color: hsl(240, 100%, 20%);
+    color: hsl(0, 0%, 90%);
+}
+
+.secondary {
+    color: hsl(240, 100%, 20%);
+    background-color: hsl(60, 82%, 62%);
+}
+
+.neutral-1 {
+    color: hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 20%);
+}
+
+.neutral-2 {
+    color: hsl(0, 0%, 20%);
+    background-color: hsl(0, 0%, 90%);
+}
