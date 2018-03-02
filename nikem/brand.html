@@ -10,18 +10,23 @@
 <!-- site wide -->
 <header role="banner" aria-label="site-wide-navigation" class="site-header">
   <nav role="navigation" aria-label="navigation" class="site-header-nav">
-    <ul>
+    <ul class="site-header-nav-left">
       <li><a class="nikem nikem-alt" href="#">nikem</a></li>
+    </ul>
+    <ul class="site-header-nav-right">
+      <li><a href="#section-header-logo">Logo</a></li>
+      <li><a href="#section-header-font">Font</a></li>
+      <li><a href="#section-header-colors">Colors</a></li>
     </ul>
   </nav>
 </header>
 <!-- page -->
 <main role="main" class="site-main">
-  <header aria-labelledby="page-title" class="site-main-header">
+  <header aria-labelledby="page-title" class="site-main-header section">
     <h1 id="page-title">nikem Branding</h1>
     <p>Brand definition for the world's most famous software company.</p>
   </header>
-  <section role="region" aria-labelledby="section-header-logo">
+  <section role="region" aria-labelledby="section-header-logo" class="section section-logo">
     <h2 id="section-header-logo">Logo</h2>
     <p>The logo may be used in two color schemes.</p>
     <figure>
@@ -33,8 +38,17 @@
       <span class="nikem nikem-alt">nikem</span>
     </figure>
   </section>
-  <section role="region" aria-labelledby="section-header-colors">
+  <section role="region" aria-labelledby="section-header-font" class="section section-font">
+    <h2 id="section-header-font">Font</h2>
+    <p>
+      The logo font is <a href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">Open Sans bold</a>
+      with a letter spacing of <code>0.05em</code>.
+    </p>
+    <p>The default font size is <code>24px</code>.</p>
+  </section>
+  <section role="region" aria-labelledby="section-header-colors" class="section section-colors">
     <h2 id="section-header-colors">Colors</h2>
+    <section class="section">
     <h3>Primary and Secondary Color</h3>
     <figure class="figure-color" aria-label="Primary and secondary color">
       <div class="color primary" aria-label="Primary color">
@@ -48,6 +62,23 @@
         #EEEE4F
       </div>
     </figure>
+    </section>
+    <section class="section">
+    <h3>Additional colors</h3>
+    <figure class="figure-color" aria-label="Additional colors">
+      <div class="color additional-1" aria-label="light blue">
+        light blue<br />
+        hsl(240, 70%, 40%)<br />
+        #000066
+      </div>
+      <div class="color additional-2" aria-label="light blue">
+        background blue<br />
+        hsl(240, 70%, 95%)<br />
+        #000066
+      </div>
+    </figure>
+    </section>
+    <section class="section">
     <h3>Neutral Colors</h3>
     <figure class="figure-color" aria-label="Neutral colors">
       <div class="color neutral-1" aria-label="dark gray">
@@ -61,6 +92,7 @@
         #E6E6E6
       </div>
     </figure>
+    </section>
   </section>
 </main>
 <!-- site wide footer -->

@@ -4,35 +4,80 @@
     box-sizing: border-box;
 }
 
+html, body, main {
+    height: 100%;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
+    font-size: 24px;
     color: hsl(0, 0%, 20%);
+    margin: 0;
+    padding: 0;
 }
 
 nav ul {
     padding: 0;
     margin: 0;
+    display: inline-block;
 }
 
 nav ul li {
     list-style: none;
+    display: inline-block;
+}
+
+h1 {
+    color: hsl(240, 100%, 20%);
 }
 
 .site-header-nav {
-    color: hsl(60, 82%, 62%);
     background-color: hsl(240, 100%, 20%);
-    padding: 0.2em 0;
+}
+
+.site-header-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    padding: 0.2em;
+    display: inline-block;
+}
+
+.site-header-nav-left a.nikem {
+    padding: 0.2em 0.2em 0.2em 1.4em;
+}
+
+.site-header-nav-right {
+    margin-left: 0.2em;
+}
+
+.site-header-nav-right li:hover {
+    background-color: hsl(240, 70%, 40%);
+}
+
+.site-main-header {
+    padding: 0.1em 0;
+    height: 95%;
+}
+
+.section {
+    min-height: 100%;
+}
+
+.section:nth-child(odd) {
+    background-color: hsl(240, 70%, 95%);
 }
 
 .color {
     margin-top: 3px;
     margin-right: 3px;
 
-    width: 170px;
-    height: 170px;
+    width: 230px;
+    height: 230px;
     text-align: center;
-    padding-top: 45px;
+    padding-top: calc(230px - 7em);
     display: inline-block;
+    border: 1px solid hsl(240, 100%, 20%);
 }
 
 .primary {
@@ -43,6 +88,16 @@ nav ul li {
 .secondary {
     color: hsl(240, 100%, 20%);
     background-color: hsl(60, 82%, 62%);
+}
+
+.additional-1 {
+    color: hsl(0, 0%, 90%);
+    background-color: hsl(240, 70%, 40%);
+}
+
+.additional-2 {
+    color: hsl(240, 100%, 20%);
+    background-color: hsl(240, 70%, 95%);
 }
 
 .neutral-1 {
