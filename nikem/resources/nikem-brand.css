@@ -16,6 +16,27 @@ body {
     padding: 0;
 }
 
+button {
+    font-size: 0.5em;
+    font-weight: bold;
+    border-radius: 3px;
+    border: 1px solid hsla(0, 100%, 50%, 0);
+    padding: 2em 2em;
+    cursor: pointer;
+    transition: background-color 400ms;
+}
+
+.button-secondary {
+    color: hsl(240, 100%, 20%);
+    background-color: hsl(60, 95%, 75%);
+    padding: 0.8em 2em;
+}
+
+.button-secondary:hover,
+.button-secondary:active {
+    background-color: hsl(60, 82%, 62%);
+}
+
 nav ul {
     padding: 0;
     margin: 0;
@@ -27,10 +48,6 @@ nav ul li {
     display: inline-block;
 }
 
-h1 {
-    color: hsl(240, 100%, 20%);
-}
-
 .site-header-nav {
     background-color: hsl(240, 100%, 20%);
 }
@@ -38,7 +55,6 @@ h1 {
 .site-header-nav a {
     text-decoration: none;
     color: white;
-    font-weight: 700;
     padding: 0.2em;
     display: inline-block;
 }
@@ -47,17 +63,24 @@ h1 {
     padding: 0.2em 0.2em 0.2em 1.4em;
 }
 
-.site-header-nav-right {
+.site-header-nav-middle {
     margin-left: 0.2em;
 }
 
-.site-header-nav-right li:hover {
+.site-header-nav-middle li:hover {
     background-color: hsl(240, 70%, 40%);
+}
+
+.site-header-nav-right {
+    float: right;
+    margin-right: 0.5em;
 }
 
 .site-main-header {
     padding: 0.1em 0;
     height: 95%;
+    background-color: hsl(240, 100%, 20%);
+    color: #FFFFFF;
 }
 
 .section {
@@ -65,7 +88,7 @@ h1 {
     padding: 0.1em 0;
 }
 
-.section:nth-child(odd) {
+.section:nth-child(2n+3) {
     background-color: hsl(240, 70%, 95%);
 }
 
@@ -73,6 +96,7 @@ h1 {
     margin-top: 3px;
     margin-right: 3px;
 
+    color: hsl(240, 100%, 20%);
     width: 230px;
     height: 230px;
     text-align: center;
@@ -87,7 +111,6 @@ h1 {
 }
 
 .secondary {
-    color: hsl(240, 100%, 20%);
     background-color: hsl(60, 82%, 62%);
 }
 
@@ -97,9 +120,17 @@ h1 {
 }
 
 .additional-2 {
-    color: hsl(240, 100%, 20%);
     background-color: hsl(240, 70%, 95%);
 }
+
+.additional-3 {
+    background-color: hsl(60, 95%, 75%);
+}
+
+.additional-4 {
+    background-color: hsl(60, 82%, 95%);
+}
+
 
 .neutral-1 {
     color: hsl(0, 0%, 90%);
@@ -109,4 +140,14 @@ h1 {
 .neutral-2 {
     color: hsl(0, 0%, 20%);
     background-color: hsl(0, 0%, 90%);
+}
+
+.ok {
+    color: hsl(0, 0%, 20%);
+    background-color: hsl(120, 90%, 70%);
+}
+
+.error {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 90%, 60%);
 }
