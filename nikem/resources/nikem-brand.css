@@ -52,15 +52,11 @@ nav ul li {
     background-color: hsl(240, 100%, 20%);
 }
 
-.site-header-nav a {
+.site-header-nav a:not(.nikem) {
     text-decoration: none;
     color: white;
     padding: 0.2em;
     display: inline-block;
-}
-
-.site-header-nav-left a.nikem {
-    padding: 0.2em 0.2em 0.2em 1.4em;
 }
 
 .site-header-nav-middle {
@@ -88,8 +84,17 @@ nav ul li {
     padding: 0.1em 0;
 }
 
-.section:nth-child(2n+3) {
-    background-color: hsl(240, 70%, 95%);
+@media not print {
+    .section:nth-child(2n+3) {
+        background-color: hsl(240, 70%, 95%);
+    }
+}
+
+svg {
+    width: 230px;
+    height: 230px;
+    display: inline-block;
+    font-size: 1.5px;
 }
 
 .color {
@@ -105,13 +110,18 @@ nav ul li {
     border: 1px solid hsl(240, 100%, 20%);
 }
 
-.primary {
-    background-color: hsl(240, 100%, 20%);
-    color: hsl(0, 0%, 90%);
+.primary rect {
+    fill: hsl(240, 100%, 20%);
+}
+.primary text {
+    fill: hsl(0, 0%, 90%);
 }
 
-.secondary {
-    background-color: hsl(60, 82%, 62%);
+.secondary rect {
+    fill: hsl(60, 82%, 62%);
+}
+.secondary text {
+    fill: hsl(240, 100%, 20%);
 }
 
 .additional-1 {
@@ -150,4 +160,37 @@ nav ul li {
 .error {
     color: hsl(0, 0%, 100%);
     background-color: hsl(0, 90%, 60%);
+}
+
+@media print {
+    body {
+        font-size: 12px;
+    }
+
+    button {
+        display: none;
+    }
+
+    .site-header-nav {
+        background-color: initial;
+    }
+
+    .site-header-nav a {
+        text-decoration: none;
+        color: initial;
+        padding: 0.2em;
+        display: inline-block;
+    }
+
+    .site-main-header {
+        padding: 0.1em 0;
+        color: initial;
+        background-color: initial;
+        height: initial;
+    }
+
+    .section {
+        min-height: initial;
+        background-color: initial;
+    }
 }
