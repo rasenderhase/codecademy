@@ -29,8 +29,8 @@ a {
 }
 
 .teresa-jenkins {
-  position: absolute;
-  top: 60px;
+  position: relative;
+  bottom: 120px;
   left: 10px;
   color: #FFFFFF;
   font-family: "PT Sans";
@@ -189,7 +189,7 @@ h4 {
 
     .teresa-jenkins {
         left: 160px;
-        bottom: -180px;
+        bottom: 560px;
         top: unset;
         font-size: 180px;
         line-height: 146px;
