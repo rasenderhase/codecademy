@@ -4,4 +4,4 @@
 
 ### Project Designing Layouts, Inclusive Interviews
 
-[Preview](http://htmlpreview.github.io/?https://github.com/rasenderhase/codecademy/blob/master/accessability-cumulative-project/index.html)
+[Preview](http://htmlpreview.github.io/?https://github.com/rasenderhase/codecademy/blob/master/inclusive-interview-starting-code/index.html)
