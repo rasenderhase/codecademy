@@ -230,10 +230,10 @@ nav {
   grid-area: nav;
   background-color: hsla(0, 0%, 93%, 1);
   border-top: 1px solid hsla(0, 0%, 85%, 1);
-  padding: 1.313rem 24.25rem 1.313rem 25rem;
+  padding: 1.313rem 0;
 }
 
-nav a:visted {
+nav a:visited {
   color: hsla(0, 0%, 29%, 1);
 }
 
@@ -249,6 +249,10 @@ nav a:visted {
 }
 
 @media only screen and (max-width: 700px) {
+  header {
+    padding: .75rem 0px;
+  }
+
   nav {
     grid-template-columns: 1fr;
   }
