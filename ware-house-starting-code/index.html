@@ -12,17 +12,17 @@
 
     <!-- Header -->
 
-    <header>
+    <header role="banner">
       <div class="image-container">
-        <a href="index.html"><img src="resources/img/home.png"></a>
+        <a href="index.html"><img src="resources/img/home.png" alt="WAREHOUSE"></a>
       </div>
       <div class="search-bar">
-        <input type="text" name="search" placeholder="Search for items">
-        <a href="" class="icon"><img src="resources/img/search.svg"></a>
+        <input type="text" name="search" placeholder="Search for items" aria-label="Search input">
+        <a href="" class="icon" aria-label="Search"><img src="resources/img/search.svg"></a>
       </div>
       <a href="cart.html" class="button cart">Cart <img src="resources/img/cart.svg"></a>
     </header>
-    <nav>
+    <nav role="navigation">
       <a href="deals.html">Today's Deals</a>
       <a href="products.html">All Products</a>
       <a href="about.html">About Us</a>
@@ -32,7 +32,7 @@
 
     <!-- Hero Section -->
 
-    <div id="main" class="landing">
+    <div id="main" class="landing" role="main">
       <a class="hero" href="dining-tables.html">
         <h2>Shop Dining Tables</h2>
       </a>
@@ -43,8 +43,8 @@
 
         <!-- Product Categories -->
 
-        <h2>Shop by category</h2>
-        <div class="product-list categories">
+        <h2 id="category-header">Shop by category</h2>
+        <section class="product-list categories" role="region" aria-labelledby="category-header">
           <a href="living.html" class="product-category">
             <div class="image-container">
               <img src="resources/img/home/living-room.jpg">
@@ -69,12 +69,12 @@
             </div>
           </a>
 
-        </div>
+        </section>
 
         <!-- Recently Viewed Products -->
 
-        <h2>Recently Viewed</h2>
-        <div class="product-list">
+        <h2 id="recently-viewed-header">Recently Viewed</h2>
+        <section class="product-list" role="region" aria-labelledby="recently-viewed-header">
           <a href="#" class="product-item">
             <div class="image-container">
               <img src="resources/img/home/yellow-chair.jpg">
@@ -111,30 +111,30 @@
               <span class="price">$25</span>
             </div>
           </a>
-        </div>
+        </section>
       </div>
     </div>
 
     <!-- Footer -->
 
-    <footer>
-      <img src="resources/img/home.png">
-      <div class="links">
-        <h4>Get to know us</h4>
+    <footer role="contentinfo">
+      <a href="index.html"><img src="resources/img/home.png" alt="WAREHOUSE"></a>
+      <div class="links" role="navigation" aria-labelledby="get-to-know-us">
+        <h4 id="get-to-know-us">Get to know us</h4>
         <a href="#">About us</a>
         <a href="jobs.html">Jobs</a>
         <a href="#">Investor relations</a>
         <a href="#">Link</a>
       </div>
-      <div class="links">
-        <h4>Make money with us</h4>
+      <div class="links" role="navigation" aria-labelledby="make-money">
+        <h4 id="make-money">Make money with us</h4>
         <a href="sell.html">Sell on WareHouse</a>
         <a href="#">Become a vendor</a>
         <a href="#">Fundraiser events</a>
         <a href="#">Community outreach</a>
       </div>
-      <div class="links">
-        <h4>Help</h4>
+      <div class="links" role="navigation" aria-labelledby="help">
+        <h4 id="help">Help</h4>
         <a href="#">Contact us</a>
         <a href="#">Conditions of use</a>
         <a href="#">Report a problem</a>
