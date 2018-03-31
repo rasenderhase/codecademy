@@ -1,7 +1,4 @@
-@font-face {
-  font-family: 'Arial-MT' ;
-  src: url('../fonts/ari.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700');
 
 /* Site-Wide Styles */
 
@@ -10,7 +7,7 @@ html {
 }
 
 body {
-  font-family: 'Arial-MT', sans-serif;
+  font-family: 'Cabin', sans-serif;
   color: hsla(0, 0%, 29%, 1);
 }
 
@@ -23,11 +20,26 @@ a:hover {
   color: hsla(0, 0%, 29%, 1);
 }
 
+h1 {
+    font-size: 6rem;
+}
+h2 {
+  font-size: 5rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.2em;
+    padding-top: 1.2em;
+    padding-bottom: 0.7em;
+}
+
 h1,
 h2,
 h3,
 h4 {
-
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 input,
@@ -36,6 +48,18 @@ select {
   border-radius: 3px;
   background-color: hsla(0, 0%, 89%, 1);
   padding: 1rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  h2 {
+    font-size: 1.7rem;
+  }
 }
 
 /* Reusable Component - Button */
@@ -279,7 +303,6 @@ nav a:visited {
 
 #main h2 {
   margin-bottom: 2rem;
-  font-size: inherit;
 }
 
 #main .button {
