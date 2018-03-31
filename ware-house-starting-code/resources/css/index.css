@@ -12,10 +12,16 @@
 }
 
 .hero h2 {
-  padding-top: 10rem;
+  width: 550px;
+  position: relative;
+  margin: 8rem auto;
+  padding: 1rem;
+
   color: hsla(0, 100%, 100%, 1);
   font-weight: bold;
   text-align: center;
+  font-size: 4rem;
+  background-color: hsla(0, 0%, 0%, 0.5);
 }
 
 .products {
@@ -43,6 +49,11 @@
 
 
 @media only screen and (max-width: 760px) {
+  .hero h2 {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
   .landing .product-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -55,7 +66,7 @@
   }
 
   .hero h2 {
-    padding-top: 7rem;
+    margin-top: 7rem;
   }
 
   .hero p {

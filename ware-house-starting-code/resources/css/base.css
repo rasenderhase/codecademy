@@ -106,7 +106,11 @@ select {
 .product-category {
   border-radius: 10px;
   background-color: hsla(0, 0%, 100%, 1);
-  border: solid 1px hsla(0, 0%, 91%, 1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product-category:hover {
+  box-shadow: none;
 }
 
 .product-category .description-category {
@@ -127,6 +131,11 @@ select {
   border-radius: 10px;
   background-color: hsla(0, 0%, 100%, 1);
   border: solid 1px hsla(0, 0%, 91%, 1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product-item:hover {
+  box-shadow: none;
 }
 
 .product-item .description {
@@ -269,6 +278,10 @@ nav a:visited {
   color: hsla(0, 0%, 29%, 1);
 }
 
+nav a:hover, .breadcrumb a:hover {
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 1100px) {
   header {
     grid-template-columns: 1fr;
@@ -332,6 +345,10 @@ footer .links {
 
 footer a {
   color: hsla(0, 0%, 29%, 1);
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 810px) {
