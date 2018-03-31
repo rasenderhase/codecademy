@@ -50,7 +50,7 @@ select {
 
 .button:hover {
 
-  background-color: Black - hsla(0, 0%, 13%, 1);
+  background-color: hsla(0, 0%, 87%, 1);
   color: hsla(0, 100%, 100%, 1);
 }
 
@@ -76,10 +76,11 @@ select {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 3.75rem;
+  grid-gap: 6px;
 }
 
 .product-category {
-  border-radius: 2px;
+  border-radius: 10px;
   background-color: hsla(0, 0%, 100%, 1);
   border: solid 1px hsla(0, 0%, 91%, 1);
 }
@@ -94,8 +95,12 @@ select {
   color: hsla(0, 0%, 29%, 1);
 }
 
+.product-category .image-container {
+    border-radius: 10px;
+}
+
 .product-item {
-  border-radius: 2px;
+  border-radius: 10px;
   background-color: hsla(0, 0%, 100%, 1);
   border: solid 1px hsla(0, 0%, 91%, 1);
 }
@@ -117,6 +122,9 @@ select {
   color: hsla(0, 0%, 29%, 1);
 }
 
+.product-item .image-container {
+    border-radius: 10px 10px 0 0;
+}
 
 /* Reusable Component - Form Field With Label */
 .field {
@@ -189,7 +197,7 @@ header {
 
 .search-bar {
   display: flex;
-  border-radius: 33px 53px 33pzx 53px;
+  border-radius: 33px 53px 33px 53px;
   width: 100%;
 }
 
