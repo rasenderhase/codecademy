@@ -1,6 +1,6 @@
 /* About Page */
 
-.about h1 {
+.about h1.logo {
   width: 100%;
   padding: 10.5rem 0;
   background-image: url('../img/hero.png');
@@ -9,12 +9,11 @@
   background-position: center;
   font-stretch: condensed;
   color: hsla(0, 100%, 100%, 1);
-
+  font-size: 6em;
 }
 
 .about .information {
   padding: 3.75rem 20% 6.75rem 20%;
-  color: hsla(0, 0%, 29%, 1);
 }
 
 .about h3 {
@@ -37,13 +36,13 @@
 }
 
 @media only screen and (max-width: 735px) {
-  .about h1 {
+  .about h1.logo {
     font-size: 3rem;
   }
 }
 
 @media only screen and (max-width: 490px) {
-  .about h1 {
+  .about h1.logo {
     font-size: 2.7rem;
   }
 

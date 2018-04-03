@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Roboto+Condensed:400,700|Barlow+Condensed:600');
 
 /* Site-Wide Styles */
 
@@ -8,7 +8,7 @@ html {
 
 body {
   font-family: 'Cabin', sans-serif;
-  color: hsla(0, 0%, 29%, 1);
+  color: hsla(25, 63%, 10%, 1);
 }
 
 a {
@@ -16,8 +16,20 @@ a {
   transition: .3s;
 }
 
-a:hover {
-  color: hsla(0, 0%, 29%, 1);
+.logo {
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 600;
+  padding-bottom: 0.35em;
+}
+
+.logo span {
+  font-size: 1.3em;
+}
+
+.logo:hover {
+  text-decoration: none;
 }
 
 h1 {
@@ -33,6 +45,7 @@ h4 {
     font-size: 1.2em;
     padding-top: 1.2em;
     padding-bottom: 0.7em;
+    font-weight: bold;
 }
 
 h1,
@@ -66,16 +79,15 @@ select {
 
 .button {
   border-radius: 30px;
-  background-color: hsla(0, 0%, 13%, 1);
+  background-color: hsla(25, 63%, 10%, 1);
   text-align: center;
   color: hsla(0, 0%, 93%, 1);
   transition: .25s;
 }
 
 .button:hover {
-
-  background-color: hsla(0, 0%, 87%, 1);
-  color: hsla(0, 100%, 100%, 1);
+  background-color: hsla(25, 40%, 87%, 1);
+  color: hsla(25, 63%, 100%, 1);
 }
 
 /* Reusable Component - Image Container */
@@ -106,7 +118,7 @@ select {
 .product-category {
   border-radius: 10px;
   background-color: hsla(0, 0%, 100%, 1);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
 .product-category:hover {
@@ -120,7 +132,6 @@ select {
 
 .product-category h3 {
   margin-bottom: .75rem;
-  color: hsla(0, 0%, 29%, 1);
 }
 
 .product-category .image-container {
@@ -131,7 +142,7 @@ select {
   border-radius: 10px;
   background-color: hsla(0, 0%, 100%, 1);
   border: solid 1px hsla(0, 0%, 91%, 1);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
 .product-item:hover {
@@ -146,13 +157,11 @@ select {
 
 .product-item h3 {
   margin-bottom: .75rem;
-  color: hsla(0, 0%, 29%, 1);
   position: relative;
   display: block;
 }
 
 .product-item .price {
-  color: hsla(0, 0%, 29%, 1);
 }
 
 .product-item .image-container {
@@ -272,10 +281,11 @@ nav {
   background-color: hsla(0, 0%, 93%, 1);
   border-top: 1px solid hsla(0, 0%, 85%, 1);
   padding: 1.313rem 0;
+  line-height: 1.5;
 }
 
-nav a:visited {
-  color: hsla(0, 0%, 29%, 1);
+nav a:visited, .breadcrumb a:visited {
+  color: hsla(25, 23%, 40%, 1);
 }
 
 nav a:hover, .breadcrumb a:hover {
@@ -331,7 +341,12 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 1.5rem;
-  background-color: hsla(0, 100%, 100%, 1);
+  background-color: hsla(25, 63%, 10%, 1);
+  color: hsla(25, 0%, 90%, 1);
+}
+
+footer .logo {
+  color: hsla(25, 0%, 100%, 1);
 }
 
 footer img {
@@ -341,10 +356,7 @@ footer img {
 
 footer .links {
   display: grid;
-}
-
-footer a {
-  color: hsla(0, 0%, 29%, 1);
+  line-height: 2;
 }
 
 footer a:hover {
