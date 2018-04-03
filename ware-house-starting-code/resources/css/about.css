@@ -35,6 +35,10 @@
   background-color: hsla(0, 0%, 100%, 1);
 }
 
+.about .breadcrumb {
+  margin-left: 5rem;
+}
+
 @media only screen and (max-width: 735px) {
   .about h1.logo {
     font-size: 3rem;

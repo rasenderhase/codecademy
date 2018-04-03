@@ -1,6 +1,6 @@
 # My Codecademy Projects
 
-[Preview](http://htmlpreview.github.io/?https://github.com/rasenderhase/codecademy/blob/master/index.html)
+[Preview](https://rasenderhase.github.io/codecademy/)
 
 ## Build Website UIs
 * [Two Sandals Soups and Salads](./soups)

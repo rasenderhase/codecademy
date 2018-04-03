@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width">
   <title>WareHouse</title>
   <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
   <link rel="stylesheet" type="text/css" href="resources/css/base.css">
@@ -10,21 +12,18 @@
 
     <!-- Header -->
 
-    <header>
-      <div class="image-container">
-        <a href="index.html"><img src="resources/img/home.png"></a>
-      </div>
+    <header role="banner">
+      <a class="logo" href="index.html">ware<span>&#8962;</span>house</a>
       <div class="search-bar">
-        <input type="text" name="search" placeholder="Search for items">
-        <a href="" class="icon"><img src="resources/img/search.svg"></a>
+        <input type="text" name="search" placeholder="Search for items" aria-label="Search input">
+        <a href="" class="icon" aria-label="Search"><img src="resources/img/search.svg"></a>
       </div>
       <a href="cart.html" class="button cart">Cart <img src="resources/img/cart.svg"></a>
     </header>
-    <nav>
+    <nav role="navigation">
       <a href="deals.html">Today's Deals</a>
-      <a href="products.html">Products</a>
+      <a href="products.html">All Products</a>
       <a href="about.html">About Us</a>
-      <a href="sell.html">Sell</a>
       <a href="#">Help</a>
     </nav>
 
@@ -85,24 +84,24 @@
 
     <!-- Footer -->
 
-    <footer>
-      <img src="resources/img/home.png">
-      <div class="links">
-        <h4>Get to know us</h4>
-        <a href="#">About us</a>
+    <footer role="contentinfo">
+      <a class="logo" href="index.html">ware<span>&#8962;</span>house</a>
+      <div class="links" role="navigation" aria-labelledby="get-to-know-us">
+        <h4 id="get-to-know-us">Get to know us</h4>
+        <a href="about.html">About us</a>
         <a href="jobs.html">Jobs</a>
         <a href="#">Investor relations</a>
         <a href="#">Link</a>
       </div>
-      <div class="links">
-        <h4>Make money with us</h4>
+      <div class="links" role="navigation" aria-labelledby="make-money">
+        <h4 id="make-money">Make money with us</h4>
         <a href="sell.html">Sell on WareHouse</a>
         <a href="#">Become a vendor</a>
         <a href="#">Fundraiser events</a>
         <a href="#">Community outreach</a>
       </div>
-      <div class="links">
-        <h4>Help</h4>
+      <div class="links" role="navigation" aria-labelledby="help">
+        <h4 id="help">Help</h4>
         <a href="#">Contact us</a>
         <a href="#">Conditions of use</a>
         <a href="#">Report a problem</a>
