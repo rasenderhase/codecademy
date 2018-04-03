@@ -3,6 +3,7 @@
 [Preview](https://rasenderhase.github.io/codecademy/)
 
 ## Build Website UIs
+* [Ware House](./ware-house-starting-code)
 * [Two Sandals Soups and Salads](./soups)
 * [First Project](./first_project)
 * [Beach Paradise](./BeachParadise)
@@ -12,4 +13,3 @@
 * [Complementary Color Palette](./colors)
 * [Inclusive Interview](./inclusive-interview-starting-code)
 * [Madre Buena Blog Site](./typography-for-ui-cumulative-starting-point)
-* [Ware House](./ware-house-starting-code)
