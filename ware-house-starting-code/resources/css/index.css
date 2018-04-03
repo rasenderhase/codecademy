@@ -77,6 +77,10 @@
     width: 90%;
     margin: auto;
   }
+
+  .products {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 470px) {

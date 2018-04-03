@@ -235,6 +235,10 @@ ul.breadcrumb a:visited {
   .product-list {
     grid-template-columns: 1fr;
   }
+
+    .product-list-section {
+        padding: 0;
+    }
 }
 
 
